@@ -1,3 +1,13 @@
+Process of creating a Continuous devlivery Pipeline
+
+*Set up a GitHub repository for the application code
+*Create an AWS Elastic Beanstalk environment to deploy the application
+*Configure AWS CodeBuild to build the source code from GitHub
+*Use AWS CodePipeline to set up the continuous delivery pipeline with source, build, and deploy stages
+
+
+
+
 1. You code your code normally and push it to github like normally would.
 
 2. use the AWS Elastic Beanstalk Console to create and deploy a web application and test it afterwards= 
@@ -33,6 +43,15 @@ to stop so someone can manually approve or reject the action.
 *Add a review stage to your pipeline
 *Manually approve a change before it is deployed
 https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-five/?e=gs2020&p=cicd-four 
+
+We have used AWS CodePipeline to add a review stage with manual approval to our continuous delivery pipeline. 
+Now, our code changes will have to be reviewed and approved before they are deployed to AWS Elastic Beanstalk.
+
+Delete any process in the pipeline = if you need to delete any of the steps on top look at the bottom of this link
+=https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-five/?e=gs2020&p=cicd-four
+
+
+Congratulations! You have a fully functional continuous delivery pipeline hosted on AWS.
 
 
 
