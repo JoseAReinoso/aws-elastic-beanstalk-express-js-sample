@@ -1,0 +1,39 @@
+1. You code your code normally and push it to github like normally would.
+
+2. use the AWS Elastic Beanstalk Console to create and deploy a web application and test it afterwards= 
+https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-two/?e=gs2020&p=cicd-one
+
+3.use AWS CodeBuild to build the source code previously stored in your GitHub repository.
+-AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, 
+and produces software packages that are ready to deploy.
+*Create a build project with AWS CodeBuild
+*Set up GitHub as the source provider for a build project
+*Run a build on AWS CodeBuild
+-https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-three/?e=gs2020&p=cicd-two
+
+4.AWS CodePipeline to set up a continuous delivery pipeline with source, build, and deploy stages.
+-he pipeline will detect changes in the code stored in your GitHub repository, build the source code using AWS CodeBuild, 
+and then deploy your application to AWS Elastic Beanstalk.
+*Set up a continuous delivery pipeline on AWS CodePipeline
+*Configure a source stage using your GitHub repo
+*Configure a build stage using AWS CodeBuild
+*Configure a deploy stage using your AWS ElasticBeanstalk application
+*Deploy the application hosted on GitHub to ElasticBeanstalk through a pipeline
+https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-four/?e=gs2020&p=cicd-three
+
+
+NOTE = At this point We have created a continuous delivery pipeline on AWS CodePipeline with three stages: source, build, and deploy. 
+The source code from the GitHub repo created in Module 1 is part of the source stage. 
+That source code is then built by AWS CodeBuild in the build stage. 
+Finally, the built code is deployed to the AWS Elastic Beanstalk environment created in Module 3.
+
+5.use AWS CodePipeline to add a review stage to your countinuous delivery pipeline.
+-As part of this process, you can add an approval action to a stage at the point where you want the pipeline execution 
+to stop so someone can manually approve or reject the action. 
+*Add a review stage to your pipeline
+*Manually approve a change before it is deployed
+https://aws.amazon.com/getting-started/hands-on/create-continuous-delivery-pipeline/module-five/?e=gs2020&p=cicd-four 
+
+
+
+
